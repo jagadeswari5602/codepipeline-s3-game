@@ -16,6 +16,16 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: 'card4', img: 'images/rollsafe.png' },
         { name: 'card5', img: 'images/success.png' },
         { name: 'card5', img: 'images/success.png' },
+        { name: 'card6', img: 'images/Untitled design (1).png' },
+        { name: 'card6', img: 'images/Untitled design (1).png' },
+        { name: 'card7', img: 'images/Untitled design (2).png' },
+        { name: 'card7', img: 'images/Untitled design (2).png' },
+        { name: 'card8', img: 'images/Untitled design (3).png' },
+        { name: 'card8', img: 'images/Untitled design (3).png' },
+        { name: 'card9', img: 'images/Untitled design (4).png' },
+        { name: 'card9', img: 'images/Untitled design (4).png' },
+        { name: 'card10', img: 'images/Untitled design (5).png' },
+        { name: 'card10', img: 'images/Untitled design (5).png' },
         // ...add more pairs as needed
     ];
 
@@ -30,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         for (let i = 0; i < cardArray.length; i++) {
             const card = document.createElement('img');
-            card.setAttribute('src', 'images/blank.png');
+            card.setAttribute('src', 'images/main.png');
             card.setAttribute('data-id', i);
             card.addEventListener('click', flipCard);
             grid.appendChild(card);
@@ -61,8 +71,8 @@ document.addEventListener('DOMContentLoaded', () => {
             cards[secondCardId].removeEventListener('click', flipCard);
             cardsWon.push(cardsChosen);
         } else {
-            cards[firstCardId].setAttribute('src', 'images/blank.png');
-            cards[secondCardId].setAttribute('src', 'images/blank.png');
+            cards[firstCardId].setAttribute('src', 'images/main.png');
+            cards[secondCardId].setAttribute('src', 'images/main.png');
         }
 
         cardsChosen = [];
