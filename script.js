@@ -77,9 +77,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         cardsChosen = [];
         cardsChosenId = [];
+        const messageElement = document.getElementById('message');
 
         if (cardsWon.length === cardArray.length / 2) {
-            alert('Congratulations! You found them all!');
+            messageElement.innerHTML= "<h1>CONGRATULATIONS!YOU WON THE GAME</h1>";
         }
     }
 
