@@ -68,6 +68,8 @@ h1 {
     cursor: pointer;
     font-size: 18px;
     transition: background-color 0.3s, transform 0.3s;
+    margin-top:120px;
+    margin-left:500px;
 }
 
 #start-game:hover {
